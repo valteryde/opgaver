@@ -2,14 +2,22 @@
 \usepackage{graphicx}
 \usepackage{xcolor}
 \newenvironment{question}[2]{SPØRGSMÅL\\}{\hspace{50px}}
-\newcommand{\image}[1]{\includegraphics[width=.5\linewidth]{#1}}
+\newcommand{\name}[1]{{\huge #1}\\}
+\newcommand{\tag}[1]{#1}
+\newcommand{\cover}[1]{\includegraphics[width=.7\linewidth]{#1}\\}
+\newcommand{\image}[1]{\includegraphics[width=.5\linewidth]{#1}\\}
 \newcommand{\answer}[1]{{\color{green} SVAR: #1}\\}
 \newcommand{\alt}[1]{{\color{red} ALT: #1}\\}
 
 \begin{document}
 
+\name{Simple funktioner}
+\cover{test.png}
+\tag{Funktioner}
+\tag{f'(x)}
+
 \begin{question}{multi}
-    
+
 Hvad er $f'(x)$ når $f(x)=2\cdot x$
 
 % \image{test.jpg}
@@ -22,4 +30,26 @@ Hvad er $f'(x)$ når $f(x)=2\cdot x$
 
 \end{document}
 
-% HUSK AT LAVE TIL EN ZIP FIL
+% HUSK AT LAVE TIL EN ZIP FIL\documentclass[]{article}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\newenvironment{question}[2]{SPØRGSMÅL\\}{\hspace{50px}}
+\newcommand{\image}[1]{\includegraphics[width=.5\linewidth]{#1}}
+\newcommand{\answer}[1]{{\color{green} SVAR: #1}\\}
+\newcommand{\alt}[1]{{\color{red} ALT: #1}\\}
+
+\begin{document}
+
+\begin{question}{multi}
+    
+Hvad er $f'(x)$ når $f(x)=2\cdot x$
+
+% \image{test.jpg}
+
+\answer{$2x$}
+\alt{0}
+\alt{$x^2$}
+
+\end{question}
+
+\end{document}
