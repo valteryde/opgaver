@@ -12,15 +12,15 @@
 \begin{document}
 
 \name{Simple funktioner}
-\cover{test.png}
+\cover{tangent.png}
 \tag{Funktioner}
 \tag{f'(x)}
 
-\begin{question}{multi}\id{689417312e824fa99a472d625ce56c31}
+\begin{question}{multi}
     
-Hvad er $f'(x)$ når $f(x)=2\cdot x$ wow mand
+Hvad er $f'(x)$ når $f(x)=2\cdot x$
 
-\image{test.png}
+% \image{test.jpg}
 
 \answer{2}
 \alt{$2x$}
@@ -28,14 +28,92 @@ Hvad er $f'(x)$ når $f(x)=2\cdot x$ wow mand
 
 \end{question}
 
-\begin{question}{multi}\id{4b69c535b1de4713b399c98f74192f4c}
-    
-Sindsygt
+\end{document}
 
-\answer{2}
-\alt{$2x$}
-\alt{$x^2$}
+% HUSK AT LAVE TIL EN ZIP FIL\documentclass[]{article}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\newenvironment{question}[2]{SPØRGSMÅL\\}{\hspace{50px}}
+\newcommand{\image}[1]{\includegraphics[width=.5\linewidth]{#1}}
+\newcommand{\answer}[1]{{\color{green} SVAR: #1}\\}
+\newcommand{\alt}[1]{{\color{red} ALT: #1}\\}
 
-\end{question}
+\begin{document}
+
+\begin{question}{multi}
+	
+	Hvad er $f'(x)$ når $f(x)=2\cdot x$
+	
+	\answer{$2$}
+	\alt{$2x$}
+	\alt{$x^2$}
+	
+	\end{question}
+	
+	\begin{question}{multi}
+		
+		Hvad er $f'(x)$ når $f(x)=10^5$
+		
+		\answer{$0$}
+		\alt{1}
+		\alt{2}
+		\alt{$50^4$}
+		
+	\end{question}
+	
+	\begin{question}{multi}
+		
+		Hvad er $f'(x)$ når $f(x)=e^x$
+		
+		\answer{$e^x$}
+		\alt{$2e^x$}
+		\alt{$xe^x$}
+		\alt{$0$}
+		
+	\end{question}
+	
+	\begin{question}{multi}
+		
+		Hvad er $f'(x)$ når $f(x)=3\cdot x^2$
+		
+		\answer{$6 x$}
+		\alt{$3x$}
+		\alt{$6x^2$}
+		\alt{$x$}
+		
+	\end{question}
+	
+	\begin{question}{multi}
+		
+		Hvad er $f'(x)$ når $f(x)=\ln(x)$
+		
+		\answer{$\frac{1}{x}$}
+		\alt{$x$}
+		\alt{$0$}
+		\alt{$1$}
+		
+	\end{question}
+	
+	\begin{question}{multi}
+		
+		Hvad er $f'(2)$ når $f(x)=\ln(x)$
+		
+		\answer{$\frac{1}{2}$}
+		\alt{$\frac{1}{3}$}
+		\alt{$1$}
+		\alt{$\frac{1}{4}$}
+		
+	\end{question}
+	
+	\begin{question}{multi}
+		
+		Hvad betyder det for grafen at $f'(2)=5$
+		
+		\answer{Tangenthældningen i $x=2$ er 5}
+		\alt{Grafen går igennem punktet (2, 5)}
+		\alt{Grafen tangere i punktet (2, 5)}
+		\alt{Grafen er konstant i $x=2$}
+		
+	\end{question}
 
 \end{document}
