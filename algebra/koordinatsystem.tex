@@ -1,0 +1,113 @@
+\documentclass[]{article}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\newenvironment{question}[2]{SPØRGSMÅL\\}{\hspace{50px}}
+\newcommand{\name}[1]{{\huge #1}\\}
+\newcommand{\tag}[1]{#1}
+\newcommand{\cover}[1]{\includegraphics[width=.7\linewidth]{#1}\\}
+\newcommand{\image}[1]{\includegraphics[width=.5\linewidth]{#1}\\}
+\newcommand{\answer}[1]{{\color{green} SVAR: #1}\\}
+\newcommand{\alt}[1]{{\color{red} ALT: #1}\\}
+
+\begin{document}
+
+\name{Koordinatsystem}
+\cover{koordinatsystem.png}
+\tag{Uden hjælpemidler}
+\tag{Koordinater}
+\tag{Funktioner}
+
+\begin{question}{multi}
+
+Givet punktet $(2,1)$ hvilken kvadrant ligger punktet i?
+
+\image{quadrant.jpg}
+
+\answer{1}
+\alt{2}
+\alt{3}
+\alt{4}
+
+\end{question}
+
+\begin{question}{multi}
+Givet punktet $(-7,\frac{1}{2})$ hvilken kvadrant ligger punktet i?
+
+\answer{2}
+\alt{1}
+\alt{3}
+\alt{4}
+
+\end{question}
+
+\begin{question}{multi}
+    
+Givet punktet $(-1,-\frac{1}{2})$. Hvilken kvadrant ligger punktet i?
+    
+\answer{3}
+\alt{1}
+\alt{2}
+\alt{4}
+
+\end{question}
+
+\begin{question}{multi}
+    
+    Givet funktionen $f(x)=x^2 - 1$. Hvilken kvadrant ligger punktet $(2, f(2))$ i?
+
+    \answer{1}
+    \alt{3}
+    \alt{2}
+    \alt{4}
+    
+\end{question}
+
+\begin{question}{multi}
+    
+    Givet funktionen $f(x)=x^2 - 1$. Hvilken kvadrant ligger punktet $(-2, f(-2))$ i?
+
+    \answer{2}
+    \alt{1}
+    \alt{3}
+    \alt{4}
+    
+\end{question}
+
+\begin{question}{multi}
+    
+    Givet funktionen $f(x)=x^2 - 1$. Hvad er $f(x)=8$?
+
+    \answer{3 og -3}
+    \alt{2 og -1}
+    \alt{6 og 3}
+    \alt{2 og -3}
+
+\end{question}
+
+\begin{question}{multi}
+    
+    Givet funktionen $f(x)=x^2 - 1$. Hvilke koordinatsæt har punkterne hvor $f(x)=8$?
+
+    \image{andengradsfunktioner.png}
+
+    \answer{$(-3, 8)$ og $(3, 8)$}
+    \alt{$(-2, 1)$ og $(3, 6)$}
+    \alt{$(8, -3)$ og $(8, 3)$}
+    \alt{$(2, 8)$ og $(-3, 8)$}
+
+\end{question}
+
+\begin{question}{multi}
+    
+    Givet funktionen $f(x)=x^2 - 1$. Hvilke kvadranter ligger punkterne hvor $f(x)=8$ i?
+    \image{andengradsfunktionermedpunkter.png}
+
+    \answer{1 og 2}
+    \alt{1 og 3}
+    \alt{2 og 3}
+    \alt{2 og 4}
+    \alt{3 og 4}
+
+\end{question}
+
+\end{document}

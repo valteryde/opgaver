@@ -16,6 +16,7 @@
 *.cb2
 .*.lb
 .DS_Store
+graph.py
 
 ## Intermediate documents:
 *.dvi
