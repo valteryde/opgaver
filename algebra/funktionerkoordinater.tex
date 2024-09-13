@@ -1,0 +1,130 @@
+\documentclass[]{article}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\newcounter{spgcounter}
+\newenvironment{question}[2]{\addtocounter{spgcounter}{1} SPØRGSMÅL \thespgcounter\\}{\hspace{50px}}
+\newcommand{\name}[1]{{\huge #1}\\}
+\newcommand{\tag}[1]{#1}
+\newcommand{\cover}[1]{\includegraphics[width=.7\linewidth]{#1}\\}
+\newcommand{\image}[1]{\includegraphics[width=.5\linewidth]{#1}\\}
+\newcommand{\answer}[1]{{\color{green} SVAR: #1}\\}
+\newcommand{\alt}[1]{{\color{red} ALT: #1}\\}
+
+
+\begin{document}
+
+\name{Funktioner i et koordinatsystem}
+\cover{funktionergrafkoordinat.png}
+\tag{Funktioner}
+\tag{Koordinatsystem}
+
+\begin{question}{multi}
+    
+Givet en funktion $f(x)=2 \cdot x$ og dens tilhørende graf
+
+\image{linearfunktion.png}
+
+Aflæs på grafen hvad $f(8)$ er.
+
+\answer{16}
+\alt{20}
+\alt{12}
+\alt{$-10$}
+
+\end{question}
+
+\begin{question}{multi}
+    
+    Aflæs på grafen hvad $f(x)=14$ er. Altså, hvad skal $x$ være når $f(x)$ skal være 14.
+    
+    \answer{7}
+    \alt{5}
+    \alt{-2}
+    \alt{10}
+    
+\end{question}
+
+\begin{question}{multi}
+    
+    Aflæs på grafen hvad $f(x)=4$ er.
+    
+    \answer{2}
+    \alt{1}
+    \alt{3}
+    \alt{4}
+
+\end{question}
+
+
+\begin{question}{multi}
+
+Hvad er $f(3)$
+
+\answer{6}
+\alt{3}
+\alt{2}
+\alt{$-6$}
+
+\end{question}
+
+\begin{question}{multi}
+    
+Hvad er $f(-1)$
+
+\answer{$-2$}
+\alt{$-3$}
+\alt{2}
+\alt{$1$}
+\alt{$-1$}
+
+\end{question}
+
+\begin{question}{multi}
+    
+Hvilke af følgende ligninger er det samme som $f(x)=1$
+    
+\answer{$2x=1$}
+\alt{$2\cdot 1 = 1$}
+\alt{$2=4$}
+\alt{$1 \cdot x=2$}
+    
+\end{question}
+
+\begin{question}{multi}
+    
+Løs $f(x)=1$
+        
+\answer{$\frac{1}{2}$}
+\alt{$1$}
+\alt{$2$}
+\alt{$\frac{2}{1}$}
+
+\end{question}
+
+
+\begin{question}{multi}
+    
+Givet nedenstående graf
+
+\image{andengradsfunktionen1.png}
+
+Aflæs hvad $f(3)$
+
+\answer{$14$}
+\alt{$20$}
+\alt{$-12$}
+\alt{$5$}
+
+\end{question}
+
+\begin{question}{multi}
+    
+Aflæs de to $x$-kordinater hvor $f(x)=10$
+    
+\answer{Omkring $-4,5$ og $2,5$}
+\alt{Omkring $1$ og $10$}
+\alt{Omkring $-5$ og $5$}
+
+\end{question}
+
+\end{document}
