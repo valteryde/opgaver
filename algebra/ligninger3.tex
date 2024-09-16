@@ -1,0 +1,67 @@
+\documentclass[]{article}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\newcounter{spgcounter}
+\newenvironment{question}[2]{\addtocounter{spgcounter}{1} SPØRGSMÅL \thespgcounter\\}{\hspace{50px}}
+\newcommand{\name}[1]{{\huge #1}\\}
+\newcommand{\tag}[1]{#1}
+\newcommand{\cover}[1]{\includegraphics[width=.7\linewidth]{#1}\\}
+\newcommand{\image}[1]{\includegraphics[width=.5\linewidth]{#1}\\}
+\newcommand{\answer}[1]{{\color{green} SVAR: #1}\\}
+\newcommand{\alt}[1]{{\color{red} ALT: #1}\\}
+
+\begin{document}
+
+\name{Ligninger iii}
+\cover{eksponotielligninger.png}
+\tag{Potenser}
+\tag{Nulreglen}
+\tag{Uden hjælpemidler}
+
+\begin{question}{multi}
+    Hvilke af nedenstående ligninger er det samme som $10^x = 100$
+    
+    \answer{$x \log_{10}{(10)} = \log_{10}{(100)}$}
+    \alt{$x \ln{(10)} = \log_{10}{(100)}$}
+    \alt{$x \cdot 10 = 100$}
+    \end{question}
+    
+    \begin{question}{multi}
+    Løs $10^x = 100$
+    \answer{$2$}
+    \alt{$1$}
+    \alt{$5$}
+    \end{question}
+    
+    \begin{question}{multi}
+    Løs $2^{1+x} = 64$
+    \answer{$5$}
+    \alt{$-5$}
+    \alt{$1$}
+    \alt{$\ln{(2)}$}
+    \end{question}
+    
+    \begin{question}{multi}
+    Løs $\ln{(x)}=4$
+    \answer{$e^4$}
+    \alt{$2$}
+    \alt{$e^2$}
+    \alt{$1$}
+    \end{question}
+    
+    \begin{question}{multi}
+    Løs $(x+1)\cdot (x-5)=0$. Hint: Brug nulreglen
+    \answer{$x=-1$ og $x=5$}
+    \alt{$x=-2$ og $x=3$}
+    \alt{$x=-1$ og $x=7$}
+    \end{question}
+    
+    \begin{question}{multi}
+    Løs $(x^2-9)\cdot (x+4)=0$
+    \answer{$x=-3$ og $x=3$ og $x=-4$}
+    \alt{$x=-6$ og $x=-1$ og $x=2$}
+    \alt{$x=-1$ og $x=-7$ og $x=9$}
+    \end{question}
+    
+
+\end{document}

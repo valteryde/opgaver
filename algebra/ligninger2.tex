@@ -1,0 +1,61 @@
+\documentclass[]{article}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\newcounter{spgcounter}
+\newenvironment{question}[2]{\addtocounter{spgcounter}{1} SPØRGSMÅL \thespgcounter\\ }{\hspace{50px}}
+\newcommand{\name}[1]{{\huge #1}\\}
+\newcommand{\tag}[1]{#1}
+\newcommand{\cover}[1]{\includegraphics[width=.7\linewidth]{#1}\\}
+\newcommand{\image}[1]{\includegraphics[width=.5\linewidth]{#1}\\}
+\newcommand{\answer}[1]{{\color{green} SVAR: #1}\\}
+\newcommand{\alt}[1]{{\color{red} ALT: #1}\\}
+
+\begin{document}
+
+\name{Ligninger ii}
+\cover{brøkkerligninger.png}
+\tag{Uden hjælpemidler}
+\tag{Brøkker}
+\tag{1/x}
+
+\begin{question}{multi}
+Vis at løsningen til $\frac{1}{x} + 2 = 10$ er $x=\frac{1}{8}$
+\answer{Aflever}
+\end{question}
+
+\begin{question}{multi}
+Løs $\frac{1}{x} - 4 = 3$
+
+\answer{$\frac{1}{7}$}
+\alt{$\frac{2}{5}$}
+\alt{$\frac{1}{7}$}
+\alt{$\frac{-2}{7}$}
+\end{question}
+
+\begin{question}{multi}
+Løs $\frac{1}{x+1} + 7 = 1$
+
+\answer{$-\frac{7}{6}$}
+\alt{$\frac{7}{6}$}
+\alt{$\frac{2}{3}$}
+\alt{$-\frac{2}{3}$}
+\end{question}
+
+\begin{question}{multi}
+Løs $\frac{1}{x+2} \cdot 5 = 2$
+\answer{$\frac{1}{2}$}
+\alt{$-\frac{1}{2}$}
+\alt{$-\frac{3}{1}$}
+\alt{$-\frac{6}{4}$}
+\end{question}
+
+\begin{question}{multi}
+Løs $\frac{2}{x+1} = x$
+\answer{$-2$ og $1$}
+\alt{$2$ og $-1$}
+\alt{$3$ og $4$}
+\alt{$-3$ og $-4$}
+
+\end{question}
+
+\end{document}

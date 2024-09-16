@@ -1,0 +1,43 @@
+
+\documentclass[]{article}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\newcounter{spgcounter}
+\newenvironment{question}[2]{\addtocounter{spgcounter}{1} SPØRGSMÅL \thespgcounter\\}{\hspace{50px}}
+\newcommand{\name}[1]{{\huge #1}\\}
+\newcommand{\tag}[1]{#1}
+\newcommand{\cover}[1]{\includegraphics[width=.7\linewidth]{#1}\\}
+\newcommand{\image}[1]{\includegraphics[width=.5\linewidth]{#1}\\}
+\newcommand{\answer}[1]{{\color{green} SVAR: #1}\\}
+\newcommand{\alt}[1]{{\color{red} ALT: #1}\\}
+
+\begin{document}
+
+\name{Reducéring med kvadratsætninger}
+\cover{kvadratsætninger.png}
+\tag{Kvadratsætninger}
+\tag{Tal og ligninger}
+
+\begin{question}{multi}
+Reducér udtrykket $(a-b)\cdot (a+b) - 2 a^2 + b^2$
+\answer{$-a^2$}
+\end{question}
+
+\begin{question}{multi}
+Reducér udtrykket $(p+q)^2 + 2 p (p - q)$
+\answer{$3 p^2 + q^2$}
+\end{question}
+
+\begin{question}{multi}
+Reducér udtrykket $(p-q)^2+2p\cdot q - q^2$
+\answer{$p^2$}
+\end{question}
+
+\begin{question}{multi}
+Reducér udtrykket $a^2 + 2a \cdot b - (a+b)^2$
+\answer{$-b^2$}
+\end{question}
+
+\end{document}
+
+

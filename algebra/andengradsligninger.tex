@@ -1,0 +1,70 @@
+\documentclass[]{article}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\newcounter{spgcounter}
+\newenvironment{question}[2]{\addtocounter{spgcounter}{1} SPØRGSMÅL \thespgcounter\\}{\hspace{50px}}
+\newcommand{\name}[1]{{\huge #1}\\}
+\newcommand{\tag}[1]{#1}
+\newcommand{\cover}[1]{\includegraphics[width=.7\linewidth]{#1}\\}
+\newcommand{\image}[1]{\includegraphics[width=.5\linewidth]{#1}\\}
+\newcommand{\answer}[1]{{\color{green} SVAR: #1}\\}
+\newcommand{\alt}[1]{{\color{red} ALT: #1}\\}
+
+\begin{document}
+
+\name{Andengradsligninger}
+\cover{andengradsligninger.png}
+\tag{Ligninger}
+
+\begin{question}{multi}
+Løs andengradsligningen $3x^2 -18x+15=0$
+\answer{5 og 1}
+\answer{1 og 4}
+\answer{1 og -2}
+\end{question}
+
+\begin{question}{multi}
+Løs andengradsligningen $2x^2+4x-6=0$
+\answer{1 og -3}
+\alt{-3 og -1}
+\alt{-7 og -2}
+\end{question}
+
+\begin{question}{multi}
+Løs andengradsligningen $-x^2+12x-35=0$
+\answer{7 og 5}
+\alt{4 og 6}
+\alt{2 og 2}
+\end{question}
+
+\begin{question}{multi}
+Løs andengradsligningen $-x^2+12x=35$
+\answer{7 og 5}
+\alt{-1 og 1}
+\alt{-2 og 2}
+\end{question}
+
+\begin{question}{multi}
+Løs $x^2+4x-5=0$
+\answer{1 og -5}
+\alt{-2 og 1}
+\alt{-64 og 3}
+\end{question}
+
+\begin{question}{multi}
+Løs $-x^2+3x=0$
+\answer{3 og 0}
+\alt{-1 og 3}
+\alt{-1 og 0}
+\end{question}
+
+\begin{question}{multi}
+Løs $-4x^2+x-\frac{1}{16}=0$
+\answer{$\frac{1}{8}$}
+\alt{2 og 3}
+\alt{$\frac{1}{2}$ og -2}
+\alt{-1}
+\end{question}
+    
+
+\end{document}
