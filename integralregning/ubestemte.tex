@@ -1,0 +1,97 @@
+\documentclass[]{article}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\newcounter{spgcounter}
+\newenvironment{question}[2]{\addtocounter{spgcounter}{1} SPØRGSMÅL \thespgcounter\\}{\hspace{50px}}
+\newcommand{\name}[1]{{\huge #1}\\}
+\newcommand{\tag}[1]{#1}
+\newcommand{\cover}[1]{\includegraphics[width=.7\linewidth]{#1}\\}
+\newcommand{\image}[1]{\includegraphics[width=.5\linewidth]{#1}\\}
+\newcommand{\answer}[1]{{\color{green} SVAR: #1}\\}
+\newcommand{\alt}[1]{{\color{red} ALT: #1}\\}
+
+\begin{document}
+
+\name{Ubestemte integrale}
+\cover{sinintegral.png}
+\tag{Funktioner}
+\tag{Blandet}
+\tag{Stamfunktioner}
+
+\begin{question}{multi}
+
+Bestem $\int{e^{2x}}\, dx$
+
+\answer{$\frac{1}{2}e^{2x} + k$}
+\alt{$e^{2x} + k$}
+\alt{$\frac{1}{2}e^{x} + k$}
+\alt{$2e^{2x} + k$}
+
+\end{question}
+
+\begin{question}{multi}
+
+Bestem $\int{\cos(x)}\, dx$
+
+\answer{$\sin(x) + k$}
+\alt{$-\cos(x) + k$}
+\alt{$\cos(x) + k$}
+\alt{$-\sin(x) + k$}
+
+\end{question}
+
+\begin{question}{multi}
+
+Bestem $\int{5e^x}\, dx$
+
+\answer{$5e^x + k$}
+\alt{$\frac{5}{e^x} + k$}
+\alt{$e^x + k$}
+\alt{$\frac{5}{x} + k$}
+
+\end{question}
+
+\begin{question}{multi}
+
+Bestem $\int{\ln(x)}\, dx$
+
+\answer{$x\ln(x) - x + k$}
+\alt{$\frac{1}{x} + k$}
+\alt{$\ln(x) + k$}
+\alt{$x\ln(x) + k$}
+
+\end{question}
+
+\begin{question}{multi}
+
+Bestem $\int{\sin(x)}\, dx$
+
+\answer{$-\cos(x) + k$}
+\alt{$\sin(x) + k$}
+\alt{$\cos(x) + k$}
+\alt{$-\sin(x) + k$}
+
+\end{question}
+
+\begin{question}{multi}
+
+Bestem $\int \frac{1}{x}\, dx $
+
+\answer{$\ln(x) + k$}
+\alt{$\frac{1}{x} + k$}
+\alt{$\ln(x) + k$}
+\alt{$x + k$}
+
+\end{question}
+
+\begin{question}{multi}
+
+Bestem $\int 3 \sqrt{x} + e^{3 x}\, dx$
+    
+\answer{$x^{\frac{3}{2}} + \frac{e^{2x}}{2} + k$}
+\alt{$x^{\frac{4}{2}} + \frac{e^{2x}}{2}$}
+\alt{$x^{\frac{3}{2}} + e^{2x}$}
+
+\end{question}
+
+\end{document}
