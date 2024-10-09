@@ -1,0 +1,88 @@
+\documentclass[]{article}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\newcounter{spgcounter}
+\newenvironment{question}[2]{\addtocounter{spgcounter}{1} SPØRGSMÅL \thespgcounter\\}{\hspace{50px}}
+\newcommand{\name}[1]{{\huge #1}\\}
+\newcommand{\tag}[1]{#1}
+\newcommand{\cover}[1]{\includegraphics[width=.7\linewidth]{#1}\\}
+\newcommand{\image}[1]{\includegraphics[width=.5\linewidth]{#1}\\}
+\newcommand{\answer}[1]{{\color{green} SVAR: #1}\\}
+\newcommand{\alt}[1]{{\color{red} ALT: #1}\\}
+
+\begin{document}
+
+\name{Produktregnereglen}
+\cover{produktregneregel.png}
+\tag{Funktioner}
+\tag{Uden hjælpemidler}
+\tag{f'(x)}
+
+\begin{question}{multi}
+
+Bestem $f'(x)$ når $f(x)=\ln{(x)}\cdot (x^2 + 1)$
+
+\answer{$\frac{x^2+1}{x}+2 \ln{(x)} \cdot x$}
+\alt{$\frac{1}{x} \cdot 2x$}
+\alt{$x^3 \cdot \frac{1}{x}$}
+\alt{$2 x \cdot \frac{\ln{(x)}}{x + 1}$}
+
+\end{question}
+
+\begin{question}{multi}
+Bestem $f'(x)$ når $f(x)=x^2 \cdot \sin(x)$
+\answer{$2x \cdot \sin(x) + x^2 \cdot \cos(x)$}
+\alt{$x^2 \cdot \cos(x)$}
+\alt{$\sin(x) + x^2$}
+\alt{$2x \cdot \sin(x)$}
+\end{question}
+        
+\begin{question}{multi}
+Bestem $f'(x)$ når $f(x)=x \cdot \ln(x)$
+\answer{$\ln(x) + 1$}
+\alt{$\frac{1}{x}$}
+\alt{$x \cdot \ln(x)$}
+\alt{$\frac{1}{x} + x$}
+\end{question}
+    
+\begin{question}{multi}
+Bestem $f'(x)$ når $f(x)=x^3 \cdot e^x$
+\answer{$x^3 \cdot e^x + 3x^2 \cdot e^x$}
+\alt{$x^3 \cdot e^x$}
+\alt{$e^x \cdot 3x^2$}
+\alt{$x^2 \cdot e^x$}
+\end{question}
+    
+\begin{question}{multi}
+Bestem $f'(x)$ når $f(x)=\sin(x) \cdot \ln(x)$
+\answer{$\cos(x) \cdot \ln(x) + \frac{\sin(x)}{x}$}
+\alt{$\cos(x) \cdot \ln(x)$}
+\alt{$\sin(x) + \ln(x)$}
+\alt{$\frac{1}{x} \cdot \cos(x)$}
+\end{question}
+    
+\begin{question}{multi}
+Bestem $f'(x)$ når $f(x)=x^2 \cdot e^{-x}$
+\answer{$2x \cdot e^{-x} - x^2 \cdot e^{-x}$}
+\alt{$2x \cdot e^{-x}$}
+\alt{$x^2 \cdot e^{-x}$}
+\alt{$-x^2 \cdot e^{-x}$}
+\end{question}
+    
+\begin{question}{multi}
+Bestem $f'(x)$ når $f(x)=\cos(x) \cdot \ln(x)$
+\answer{$-\sin(x) \cdot \ln(x) + \frac{\cos(x)}{x}$}
+\alt{$-\sin(x) \cdot \ln(x)$}
+\alt{$\frac{1}{x} \cdot \cos(x)$}
+\alt{$\cos(x) \cdot \ln(x)$}
+\end{question}
+    
+\begin{question}{multi}
+Bestem $f'(x)$ når $f(x)=2 x \cdot \sqrt{x}$
+\answer{$3 \sqrt{x}$}
+\alt{$2 \sqrt{x} + 2$}
+\alt{$-\sqrt{x^2}$}
+\alt{$\frac{1}{\sqrt{x}} + 2$}
+\end{question}
+
+\end{document}

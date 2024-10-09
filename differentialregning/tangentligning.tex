@@ -1,0 +1,76 @@
+\documentclass[]{article}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\newcounter{spgcounter}
+\newenvironment{question}[2]{\addtocounter{spgcounter}{1} SPØRGSMÅL \thespgcounter\\}{\hspace{50px}}
+\newcommand{\name}[1]{{\huge #1}\\}
+\newcommand{\tag}[1]{#1}
+\newcommand{\cover}[1]{\includegraphics[width=.7\linewidth]{#1}\\}
+\newcommand{\image}[1]{\includegraphics[width=.5\linewidth]{#1}\\}
+\newcommand{\answer}[1]{{\color{green} SVAR: #1}\\}
+\newcommand{\alt}[1]{{\color{red} ALT: #1}\\}
+
+\begin{document}
+
+\name{Tangentligning}
+\cover{tangentligning.png}
+\tag{Tangenter}
+\tag{f'(x)}
+\begin{question}{multi}
+
+    Bestem tangentligningen til $f(x) = x^2$ i punktet $x = 1$.
+    \answer{$y = 2x - 1$}
+    \alt{$y = x^2$}
+    \alt{$y = 2x + 1$}
+    \alt{$y = x - 1$}
+    \end{question}
+    
+    \begin{question}{multi}
+    Bestem tangentligningen til $f(x) = e^x$ i punktet $x = 0$.
+    \answer{$y = x + 1$}
+    \alt{$y = e^x$}
+    \alt{$y = x$}
+    \alt{$y = x + e$}
+    \end{question}
+    
+    \begin{question}{multi}
+    Bestem tangentligningen til $f(x) = \ln(x)$ i punktet $x = 1$.
+    \answer{$y = x - 1$}
+    \alt{$y = x + 1$}
+    \alt{$y = x \ln(1)$}
+    \alt{$y = 2x - 1$}
+    \end{question}
+    
+    \begin{question}{multi}
+    Bestem tangentligningen til $f(x) = \cos(x)$ i punktet $x = \frac{\pi}{2}$.
+    \answer{$y = -x + \frac{\pi}{2}$}
+    \alt{$y = x$}
+    \alt{$y = \sin(x)$}
+    \alt{$y = -x + \pi$}
+    \end{question}
+    
+    \begin{question}{multi}
+    Bestem tangentligningen til $f(x) = -x^3$ i punktet $x = -1$.
+    \answer{$y = -3x - 2$}
+    \alt{$y = 3x + 1$}
+    \alt{$y = -3x + 1$}
+    \alt{$y = 3x - 2$}
+    \end{question}
+    
+    \begin{question}{multi}
+    Bestem tangentligningen til $f(x) = \sqrt{x}$ i punktet $x = 4$.
+    \answer{$y = \frac{1}{4}x + 1$}
+    \alt{$y = \frac{1}{2}x + 1$}
+    \alt{$y = \frac{1}{4}x - 1$}
+    \alt{$y = \frac{1}{2}x + 2$}
+    \end{question}
+        
+    \begin{question}{multi}
+    Bestem tangentligningen til $f(x) = \frac{1}{x}$ i punktet $x = 1$.
+    \answer{$y = -x + 2$}
+    \alt{$y = -x$}
+    \alt{$y = \frac{1}{x} - 1$}
+    \alt{$y = -x + 1$}
+    \end{question}
+    
+\end{document}
